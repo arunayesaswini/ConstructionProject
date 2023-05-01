@@ -49,9 +49,11 @@ public class AssembleFloors
 		    	{
 	    			if(stack.isEmpty())
 	    				break;
-	    			if(floors.get(j)==stack.peek())
-			    		System.out.print(" "+stack.pop());		
-		    	}	    				
+	    			else if(floors.get(j)==stack.peek())
+			    		System.out.print(" "+stack.pop());
+				if(j==0&&i==floors.size()-1)
+					while(!stack.isEmpty())
+						System.out.print(" "+stack.pop());
 	    	}
 	    	System.out.println();
 	    }
