@@ -1,7 +1,6 @@
 package com.greatlearning.services;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Stack;
 
 import com.greatlearning.model.BinarySearchTree;
@@ -24,14 +23,13 @@ public class AssembleFloors
 	public void assembleFloors()
 	{
 		sortFloors=bst.getList();
-		Collections.sort(sortFloors);
-	    
+		  
 		
 	    
 	  //pushing sorted elements into stack
 	    for(int floor:sortFloors)
 	    {
-	    	//System.out.println(floor+" is pushed");
+	    
 	    	stack.push(floor);
 	    }
 	    	
